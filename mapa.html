@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mapa de Actividades</title>
+    <script src="https://maps.googleapis.com/maps/api/js?key=TU_API_KEY"></script>
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mapa de Actividades</h1>
+    <div id="map"></div>
+
+    <script>
+        function initMap() {
+            // Coordenadas de Menorca
+            const menorca = { lat: 39.9496, lng: 3.8535 };
+
+            // Crear el mapa
+            const map = new google.maps.Map(document.getElementById("map"), {
+                zoom: 10,
+                center: menorca,
+            });
+
+            // Datos de las actividades
+            const actividades = [
+                { nombre: 'Surf', ubicacion: { lat: 39.9862, lng: 3.8321 } },
+                { nombre: 'Senderismo', ubicacion: { lat: 39.9940, lng: 3.8685 } },
+                { nombre: 'Ciclismo de montaña', ubicacion: { lat: 39.9622, lng: 3.8298 } },
+                { nombre: 'Kayak', ubicacion: { lat: 39.9237, lng: 3.9378 } },
+                { nombre: 'Voleibol playa', ubicacion: { lat: 39.8917, lng: 3.8352 } },
+                { nombre: 'Kitesurf', ubicacion: { lat: 39.8715, lng: 3.7649 } },
+                { nombre: 'Caminata por la playa', ubicacion: { lat: 39.9234, lng: 3.8650 } },
+                { nombre: 'Vela', ubicacion: { lat: 39.8901, lng: 3.7426 } },
+                { nombre: 'Futbol en la playa', ubicacion: { lat: 39.8682, lng: 3.7559 } },
+                { nombre: 'Excursión en coche', ubicacion: { lat: 39.9334, lng: 3.8375 } },
+                { nombre: 'Paddleboarding', ubicacion: { lat: 39.9025, lng: 3.8020 } },
+                { nombre: 'Trekking', ubicacion: { lat: 39.9372, lng: 3.8606 } },
+                { nombre: 'Windsurf', ubicacion: { lat: 39.8565, lng: 3.6915 } },
+                { nombre: 'Montañismo', ubicacion: { lat: 39.9847, lng: 3.8311 } },
+                { nombre: 'Buceo', ubicacion: { lat: 39.8882, lng: 3.7352 } },
+                { nombre: 'Ciclismo en carretera', ubicacion: { lat: 39.9567, lng: 3.8764 } },
+                { nombre: 'Escalada en roca', ubicacion: { lat: 39.9923, lng: 3.8152 } },
+                { nombre: 'Yoga al aire libre', ubicacion: { lat: 39.9475, lng: 3.8440 } },
+                { nombre: 'Parapente', ubicacion: { lat: 39.9156, lng: 3.7851 } },
+                { nombre: 'Rafting', ubicacion: { lat: 39.9223, lng: 3.9201 } },
+                { nombre: 'Camping', ubicacion: { lat: 39.9502, lng: 3.8602 } },
+                { nombre: 'Ski alpino', ubicacion: { lat: 39.9665, lng: 3.8998 } },
+                { nombre: 'Skateboarding', ubicacion: { lat: 39.9341, lng: 3.8327 } },
+                { nombre: 'Cicloturismo', ubicacion: { lat: 39.9102, lng: 3.8765 } },
+                { nombre: 'Carreras de montaña', ubicacion: { lat: 39.9734, lng: 3.8882 } },
+                { nombre: 'Excursión en moto', ubicacion: { lat: 39.9254, lng: 3.8514 } },
+                { nombre: 'Escalada en hielo', ubicacion: { lat: 39.9985, lng: 3.8043 } },
+                { nombre: 'Ciclismo urbano', ubicacion: { lat: 39.9423, lng: 3.8675 } },
+                { nombre: 'Montar a caballo', ubicacion: { lat: 39.9301, lng: 3.8282 } },
+                { nombre: 'Excursión en quad', ubicacion: { lat: 39.9378, lng: 3.8421 } }
+            ];
+
+            // Marcar los puntos en el mapa
+            actividades.forEach(actividad => {
+                new google.maps.Marker({
+                    position: actividad.ubicacion,
+                    map: map,
+                    title: actividad.nombre,
+                });
+            });
+        }
+
+        // Inicializar el mapa
+        initMap();
+    </script>
+</body>
+</html>
