@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+/**
+=====================
+El main de la pagina
+=====================
+*/
+main{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+#mapa {
+  height: 400px;
+  width: 80%;
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+img{
+  height: 350px;
+  width: auto;
+}
+
+#propuestas{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.whiteBoard{
+  width: 48%; 
+  margin: 5px 5px;
+  text-align: center;
+}
+
+#actividad{
+  background-color: ghostwhite;
+}
+
+#servicio{
+background-color: greenyellow;
+}
+
+
+
+/**
+============================
+Las targetas
+============================
+*/
+
+.actividad{
+  margin: 5px;
+  background-color: whitesmoke;
+  width: 350px;
+  padding: 10px;
+  border-radius: 15px;
+}
