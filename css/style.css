@@ -7,10 +7,11 @@
 El main de la pagina
 =====================
 */
-main{
+main {
   display: flex;
   align-items: center;
   flex-direction: column;
+  background-color: rgb(200, 241, 255);
 }
 #mapa {
   height: 400px;
@@ -20,32 +21,42 @@ main{
   flex-direction: column;
   align-items: center;
 }
-img{
+img {
   height: 350px;
   width: auto;
 }
 
-#propuestas{
+#propuestas {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
-.whiteBoard{
-  width: 48%; 
+.whiteBoard {
+  width: 40%;
   margin: 5px 5px;
+  padding: 10px;
   text-align: center;
+  background-color: lightgray;
+  border-radius: 25px;
+  border: 3px solid rgb(255, 128, 0);
 }
 
-#actividad{
-  background-color: ghostwhite;
+#actividad {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
-#servicio{
-background-color: greenyellow;
+#servicio {
+  background-color: greenyellow;
 }
 
-
+hr {
+  border: 2px solid lightslategray;
+  border-radius: 100px;
+}
 
 /**
 ============================
@@ -53,9 +64,9 @@ Las targetas
 ============================
 */
 
-.actividad{
+.actividad {
   margin: 5px;
-  background-color: whitesmoke;
+  background-color: ghostwhite;
   width: 350px;
   padding: 10px;
   border-radius: 15px;
