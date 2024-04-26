@@ -29,8 +29,11 @@ PROYECTO WaDo Menorca
       <!--La imagen sustituye al mapa de google maps es solo para hacerse a la idea de como quedara-->
       <img src="https://map.viamichelin.com/map/carte?map=viamichelin&z=10&lat=40.00127&lon=4.04087&width=550&height=382&format=png&version=latest&layer=background&debug_pattern=.*" alt="" />
     </div>
-    <div id="filtros"></div>
-    <h1>Propuestas</h1>
+    <div id="filtros" class="whiteBoard-filtros">
+      <?php
+      include($_SERVER['DOCUMENT_ROOT'] . '/Proyecto_WaDo/FORMS/form_filter_activities_select.php');
+      ?>
+    </div>
     <hr />
     <div id="propuestas">
       <div class="whiteBoard">
@@ -41,7 +44,9 @@ PROYECTO WaDo Menorca
         <div id="actividad"></div>
       </div>
       <div class="whiteBoard">
-        Servicio
+        <h1>
+          Servicios
+        </h1>
         <hr />
         <div id="servicio">
 
@@ -54,6 +59,8 @@ PROYECTO WaDo Menorca
     Consulta ajax para cuando el cliente recargue la pagina que se carguen las actividades que ofrece la web
   -->
   <script src="/proyecto_wado/js/ajax/ajax_actividades_select.js"></script>
+  <script src="/proyecto_wado/js/ajax/ajax_servicio_select.js"></script>
+
 </body>
 
 </html>

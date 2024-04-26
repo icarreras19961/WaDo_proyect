@@ -1,13 +1,13 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] . '/proyecto_wado/db/db_connection.php');
-$sql = "SELECT * FROM actividad ORDER BY RAND() DESC LIMIT 10";
+$sql = "SELECT * FROM servicio ORDER BY RAND() DESC LIMIT 10";
 
 if ($resultado = mysqli_query($conn, $sql)) {
   $actividades = mysqli_fetch_all($resultado, MYSQLI_ASSOC);
   foreach ($actividades as $actividad) {
     $tags = json_decode($actividad["tags_json"], true);
 ?>
-    <div class="actividad">
+    <div class="servicio">
       <h1><?php printf($actividad["nombre"]); ?></h1>
       <hr>
       <p>puntuacion: <?php printf($actividad["puntuacion"]); ?></p>
