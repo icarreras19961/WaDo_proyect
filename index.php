@@ -16,7 +16,13 @@ PROYECTO WaDo Menorca
 -->
 
 <body>
-  <header></header>
+  <!--Header-->
+  <!--
+    Un header de toda la vida donde saldra para iniciar sesion y registrarse y se podra ver las actividads
+-->
+  <header>
+
+  </header>
   <!--Cuerpo-->
   <!--
     Aqui es donde ira el mapa y justo debajo las propuestas de actividades separadas en 2 
