@@ -21,7 +21,13 @@ PROYECTO WaDo Menorca
     Un header de toda la vida donde saldra para iniciar sesion y registrarse y se podra ver las actividads
 -->
   <header>
+    <div id="header_logo">
+      <img class="logo" src="/Proyecto_wado/img/icono.png" alt="">
+    </div>
 
+    <div id="header_botones">
+      <button>Register</button><button>Sign in</button>
+    </div>
   </header>
   <!--Cuerpo-->
   <!--
@@ -31,7 +37,6 @@ PROYECTO WaDo Menorca
 -->
   <main>
     <div id="mapa">
-      <h1>Mapa</h1>
       <!--La imagen sustituye al mapa de google maps es solo para hacerse a la idea de como quedara-->
       <img src="https://map.viamichelin.com/map/carte?map=viamichelin&z=10&lat=40.00127&lon=4.04087&width=550&height=382&format=png&version=latest&layer=background&debug_pattern=.*" alt="" />
     </div>
@@ -60,7 +65,7 @@ PROYECTO WaDo Menorca
       </div>
     </div>
   </main>
-  <footer></footer>
+  <footer>Un footer muy currado</footer>
   <!--
     Consulta ajax para cuando el cliente recargue la pagina que se carguen las actividades que ofrece la web
   -->
