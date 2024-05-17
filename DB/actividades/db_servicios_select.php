@@ -1,5 +1,5 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/proyecto_wado/db/db_connection.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/wado_proyect/db/db_connection.php');
 $sql = "SELECT ser.*, com.*
         FROM 034_servicio AS ser
         INNER JOIN 034_comercio AS com ON ser.id_comercio = com.id

@@ -11,7 +11,7 @@ if ($resultado = mysqli_query($conn, $sql)) {
       <h1><?php printf($actividad["nombre"]); ?></h1>
       <hr>
       <p>puntuacion: <?php printf($actividad["puntuacion"]); ?></p>
-      <p>Tags: <?php  printf($tags["tags"][0] . " | " . $tags["tags"][1] . " | " . $tags["tags"][2]); ?></p>
+      <p>Tags: <?php printf($tags["tags"][0] . " | " . $tags["tags"][1] . " | " . $tags["tags"][2]); ?></p>
     </div>
 <?php
   }
