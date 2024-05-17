@@ -12,8 +12,7 @@ El Header de la pagina
 */
 header {
   padding: 5px;
-  position: fixed;
-  background-color: rgb(199, 249, 255);;
+  background-color: rgb(199, 249, 255);
   width: 100%;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   display: flex;
@@ -61,12 +60,16 @@ El mapa de la pagina
 =====================
 */
 #mapa {
-  height: 400px;
+  height: 600px;
   width: 80%;
-  border: 1px solid black;
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 10px;
+}
+iframe {
+  border-radius: 25px;
+  box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 17px;
 }
 img {
   height: 350px;
@@ -138,6 +141,8 @@ Las propuestas de la pagina
 }
 
 #actividad {
+  
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -145,6 +150,7 @@ Las propuestas de la pagina
 }
 
 #servicio {
+  
   display: flex;
   justify-content: center;
   align-items: center;

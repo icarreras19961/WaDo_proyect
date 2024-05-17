@@ -1,8 +1,8 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] . '/proyecto_wado/db/db_connection.php');
 $sql = "SELECT ser.*, com.*
-        FROM servicio AS ser
-        INNER JOIN comercio AS com ON ser.id_comercio = com.id
+        FROM 034_servicio AS ser
+        INNER JOIN 034_comercio AS com ON ser.id_comercio = com.id
         ORDER BY RAND() DESC LIMIT 10";
 
 if ($resultado = mysqli_query($conn, $sql)) {
@@ -11,7 +11,6 @@ if ($resultado = mysqli_query($conn, $sql)) {
     $tags = json_decode($actividad["tags_json"], true);
 ?>
     <div class="servicio">
-      
       <h1><?php printf($actividad["nombre"]); ?></h1>
       <hr>
       <p>Empresa: <?php printf($actividad["comercio_nombre"])?></p>

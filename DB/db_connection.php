@@ -2,7 +2,7 @@
 
 //Localhost
 $servername = "localhost";
-$database = "WaDo";
+$database = "wado_entregar";
 $username = "root";
 $password = "";
 

@@ -1,6 +1,6 @@
 <?php
 include($_SERVER['DOCUMENT_ROOT'] . '/proyecto_wado/db/db_connection.php');
-$sql = "SELECT * FROM actividad ORDER BY RAND() DESC LIMIT 10";
+$sql = "SELECT * FROM 034_actividad ORDER BY RAND() DESC LIMIT 10";
 
 if ($resultado = mysqli_query($conn, $sql)) {
   $actividades = mysqli_fetch_all($resultado, MYSQLI_ASSOC);

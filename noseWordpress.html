@@ -1,94 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
-      /* Estilos para los botones */
-      .linea {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-      }
-      .boton {
-        font-family: "Lato", sans-serif;
-        font-weight: lighter;
-        
-        font-family: Arial, Helvetica, sans-serif;
-        padding: 10px 20px;
-        padding-bottom: 5px;
-        background-color: #745e4e;
-        text-decoration: none;
-        color: #fff;
-        text-align: center;
-        border: none;
-        cursor: pointer;
-        border-bottom: 5px solid #745e4e;
-      }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+    /* Estilos para los botones */
+    .linea {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+    .boton {
+      font-family: "Atkinson Hyperlegible", sans-serif;
+      width: 70%;
+      font-weight: lighter;
+      padding: 10px 20px;
+      padding-bottom: 5px;
+      text-decoration: none;
+      color: #ddcdae;
+      text-align: center;
+      border-radius: 25px;
+      border: none;
+      cursor: pointer;
+    }
 
-      /* Estilo para el hover */
-      .boton:hover {
-        border-bottom: 5px solid #b5134d;
-      }
-      /* Estilo para cuendo este en la pagina */
-      .current_page {
-        border-bottom: 5px solid #b5134d;
-        background-color: #b5134d;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Lista de botones -->
-    <div class="linea">
-      <a
-        class="boton"
-        href="https://carpinteria.010212.net/carpinteria"
-        aria-current="page"
-        >CARPINTERÍA</a
-      >
-      <a
-        class="boton"
-        href="https://carpinteria.010212.net/parquets"
-        aria-current="page"
-        >PARQUETS</a
-      >
+    /* Estilo para el hover */
+    .boton:hover {
+      box-shadow: inset 0px 4px 5px 0 black;
+    }
+    /* Estilo para cuendo este en la pagina */
+    .current_page {
+      border-bottom: 5px solid #b5134d;
+      background-color: #b5134d;
+    }
+  </style>
 
-      <a
-        class="boton"
-        href="https://carpinteria.010212.net/muebles"
-        aria-current="page"
-        >MUEBLES</a
-      >
+  <!-- Lista de botones -->
+  <div class="linea">
+    <a
+      class="boton"
+      href="https://carpinteria.010212.net/carpinteria"
+      aria-current="page"
+      >SERVEIS</a
+    >
+    <a
+      class="boton"
+      href="https://carpinteria.010212.net/parquets"
+      aria-current="page"
+      >EQUIP</a
+    >
 
-      <a
-        class="boton"
-        href="https://carpinteria.010212.net/empresa"
-        aria-current="page"
-        >EMPRESA</a
-      >
+    <a
+      class="boton"
+      href="https://carpinteria.010212.net/muebles"
+      aria-current="page"
+      >EXERCICIS</a
+    >
 
-      <a
-        class="boton"
-        href="https://carpinteria.010212.net/contacto"
-        aria-current="page"
-        >CONTACTO</a
-      >
-      <a
-        class="boton"
-        href="http://127.0.0.1:5500/noseWordpress.html"
-        aria-current="page"
-        >prueba</a
-      >
-    </div>
-    <script>
-      let boton = document.querySelectorAll(".boton");
-      for (let i = 0; i < boton.length; i++) {
-        if (boton[i].href === window.location.href) {
-          boton[i].classList.add("current_page");
-        }
+    <a
+      class="boton"
+      href="https://carpinteria.010212.net/empresa"
+      aria-current="page"
+      >CENTRE</a
+    >
+
+    <a
+      class="boton"
+      href="https://carpinteria.010212.net/contacto"
+      aria-current="page"
+      >TECNOLOGIA</a
+    >
+
+    <a
+      class="boton"
+      href="http://127.0.0.1:5500/noseWordpress.html"
+      aria-current="page"
+      >APP</a
+    ><a
+      class="boton"
+      href="http://127.0.0.1:5500/noseWordpress.html"
+      aria-current="page"
+      >CONTACTE</a
+    >
+    <a
+      class="boton"
+      href="http://127.0.0.1:5500/noseWordpress.html"
+      aria-current="page"
+      >CONTACTE</a
+    ><a
+      class="boton"
+      href="http://127.0.0.1:5500/noseWordpress.html"
+      aria-current="page"
+      >prueba</a
+    >
+  </div>
+  <script>
+    let boton = document.querySelectorAll(".boton");
+    for (let i = 0; i < boton.length; i++) {
+      if (boton[i].href === window.location.href) {
+        boton[i].classList.add("current_page");
       }
-    </script>
-  </body>
+    }
+  </script>
 </html>
