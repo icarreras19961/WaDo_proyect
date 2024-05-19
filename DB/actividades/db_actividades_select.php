@@ -1,5 +1,5 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/proyecto_wado/db/db_connection.php');
+include($_SERVER['DOCUMENT_ROOT'] . '/wado_proyect/db/db_connection.php');
 $sql = "SELECT * FROM 034_actividad ORDER BY RAND() DESC LIMIT 10";
 
 if ($resultado = mysqli_query($conn, $sql)) {
@@ -11,7 +11,7 @@ if ($resultado = mysqli_query($conn, $sql)) {
       <h1><?php printf($actividad["nombre"]); ?></h1>
       <hr>
       <p>puntuacion: <?php printf($actividad["puntuacion"]); ?></p>
-      <p>Tags: <?php printf($tags["tags"][0] . " | " . $tags["tags"][1] . " | " . $tags["tags"][2]); ?></p>
+      <p>Tags: <?php printf($tags["tags"][0] . " | " . $tags["tags"][1]); ?></p>
     </div>
 <?php
   }
