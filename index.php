@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>WaDo</title>
   <link rel="stylesheet" href="css/style.css" />
-  <link rel="shortcut icon" href="/img/icono.png">
+  <link rel="shortcut icon" href="/student034/wado/img/icono.png">
 </head>
 <!--
 ======================
@@ -23,7 +23,7 @@ PROYECTO WaDo Menorca
 -->
   <header>
     <div id="header_logo">
-      <img class="logo" src="/wado_proyect/img/icono.png" alt="">
+      <img class="logo" src="/student034/wado/img/icono.png" alt="">
     </div>
 
     <div id="header_botones">
@@ -43,7 +43,7 @@ PROYECTO WaDo Menorca
     </div>
     <div id="filtros" class="whiteBoard-filtros">
       <?php
-      include($_SERVER['DOCUMENT_ROOT'] . '/wado_proyect/FORMS/form_filter_activities_select.php');
+      include($_SERVER['DOCUMENT_ROOT'] . '/student034/wado/FORMS/form_filter_activities_select.php');
       ?>
     </div>
     <hr />
@@ -70,8 +70,8 @@ PROYECTO WaDo Menorca
   <!--
     Consulta ajax para cuando el cliente recargue la pagina que se carguen las actividades que ofrece la web
   -->
-  <script src="/wado_proyect/js/ajax/ajax_actividades_select.js"></script>
-  <script src="/wado_proyect/js/ajax/ajax_servicio_select.js"></script>
+  <script src="/student034/wado/js/ajax/ajax_actividades_select.js"></script>
+  <script src="/student034/wado/js/ajax/ajax_servicio_select.js"></script>
 
 </body>
 

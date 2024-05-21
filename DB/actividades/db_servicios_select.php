@@ -1,8 +1,23 @@
 <?php
-include($_SERVER['DOCUMENT_ROOT'] . '/wado_proyect/db/db_connection.php');
+
+//Remoto
+$servername="remotehost.es";
+$database= "dwesdatabase";
+$username="dwess1234";
+$password ="test1234.";
+
+// Creando la conexion
+$conn = mysqli_connect($servername, $username, $password, $database); //en este orden o no funciona
+
+//Probar conexion
+if (!$conn) {
+  die("Conexion fallida: " . mysqli_connect_error());
+}
+
+// include($_SERVER['DOCUMENT_ROOT'] . '/student034/wado/db/db_connection.php');
 $sql = "SELECT ser.*, com.*
-        FROM 034_servicio AS ser
-        INNER JOIN 034_comercio AS com ON ser.id_comercio = com.id
+        FROM `034_servicio` AS ser
+        INNER JOIN `034_comercio` AS com ON ser.id_comercio = com.id
         ORDER BY RAND() DESC LIMIT 10";
 
 if ($resultado = mysqli_query($conn, $sql)) {

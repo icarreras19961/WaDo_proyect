@@ -8,7 +8,7 @@ function showHint() {
   };
   conexion.open(
     "GET",
-    "/wado_proyect/DB/actividades/db_servicios_select.php",
+    "/student034/wado/DB/actividades/db_servicios_select.php",
     true
   );
 
