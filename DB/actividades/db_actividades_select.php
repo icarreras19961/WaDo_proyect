@@ -1,14 +1,14 @@
 <?php
 
 //Remoto
-$servername="remotehost.es";
-$database= "dwesdatabase";
-$username="dwess1234";
-$password ="test1234.";
+$servername = "remotehost.es";
+$database = "dwesdatabase";
+$username = "dwess1234";
+$password = "test1234.";
 
 // Creando la conexion
 $conn = mysqli_connect($servername, $username, $password, $database); //en este orden o no funciona
-
+mysqli_set_charset($conn, 'utf8');
 //Probar conexion
 if (!$conn) {
   die("Conexion fallida: " . mysqli_connect_error());

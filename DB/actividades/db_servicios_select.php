@@ -1,14 +1,14 @@
 <?php
 
 //Remoto
-$servername="remotehost.es";
-$database= "dwesdatabase";
-$username="dwess1234";
-$password ="test1234.";
+$servername = "remotehost.es";
+$database = "dwesdatabase";
+$username = "dwess1234";
+$password = "test1234.";
 
 // Creando la conexion
 $conn = mysqli_connect($servername, $username, $password, $database); //en este orden o no funciona
-
+mysqli_set_charset($conn, 'utf8');
 //Probar conexion
 if (!$conn) {
   die("Conexion fallida: " . mysqli_connect_error());
@@ -28,7 +28,7 @@ if ($resultado = mysqli_query($conn, $sql)) {
     <div class="servicio">
       <h1><?php printf($actividad["nombre"]); ?></h1>
       <hr>
-      <p>Empresa: <?php printf($actividad["comercio_nombre"])?></p>
+      <p>Empresa: <?php printf($actividad["comercio_nombre"]) ?></p>
       <p>Puntuacion: <?php printf($actividad["puntuacion"]); ?></p>
       <p>Tags: <?php printf($tags["tags"][0] . " | " . $tags["tags"][1] . " | " . $tags["tags"][2]); ?></p>
     </div>
